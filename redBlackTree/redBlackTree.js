@@ -6,3 +6,11 @@ var RedBlackTree = function (value){
   this.value = value;
 }
 
+RedBlackTree.prototype.addChild = function(first_argument) {
+  // body...
+};
+
+
+RedBlackTree.prototype.removeChild = function(first_argument) {
+  // body...
+};

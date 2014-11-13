@@ -18,8 +18,9 @@ describe('redBlackTree()', function () {
     redBlackTree.should.have.property('value');
   });
 
-  it('does something else', function () {
-    expect(true).to.equal(false);
+  it('Tree has a removeChild and addChild function', function () {
+    expect(redBlackTree.addChild).to.be.a('function');
+    expect(redBlackTree.removeChild).to.be.a('function');
   });
 
   // Add more assertions here
