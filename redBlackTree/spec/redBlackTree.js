@@ -22,6 +22,22 @@ describe('redBlackTree()', function () {
     expect(redBlackTree.addChild).to.be.a('function');
     expect(redBlackTree.removeChild).to.be.a('function');
   });
+  
+  it('Verify tree initalizes single node with value and color black', function () {
+    expect(redBlackTree.value).to.equal(9);
+    expect(redBlackTree.color).to.equal('black');
+  });
+   
+  it('Verify left property is tree with value ', function () {
+    redBlackTree.addChild(0);
+    expect(redBlackTree.left.value).to.equal(0);
+    expect(redBlackTree.left.constructor).to.equal(RedBlackTree)
+
+  }); 
+
+
+  
+
 
   // Add more assertions here
 });

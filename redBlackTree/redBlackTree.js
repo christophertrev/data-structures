@@ -1,12 +1,13 @@
-var RedBlackTree = function (value){
+var RedBlackTree = function (value,color){
+  this.color = color ? color : 'black' ;
   this.left = null;
   this.right = null;
-  this.color = 'black';
   this.parent = null;
   this.value = value;
 }
 
-RedBlackTree.prototype.addChild = function(first_argument) {
+RedBlackTree.prototype.addChild = function(value) {
+  this.left = new RedBlackTree(value)
   // body...
 };
 
