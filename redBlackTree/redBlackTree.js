@@ -1,7 +1,8 @@
-var RedBlackTree = function (){
-  this.left = null,
-  this.right = null,
-  this.color = black,
-  this.parent = null
+var RedBlackTree = function (value){
+  this.left = null;
+  this.right = null;
+  this.color = 'black';
+  this.parent = null;
+  this.value = value;
 }
 
