@@ -32,11 +32,20 @@ describe('redBlackTree()', function () {
     redBlackTree.addChild(0);
     expect(redBlackTree.left.value).to.equal(0);
     expect(redBlackTree.left.constructor).to.equal(RedBlackTree)
-
   }); 
 
+  it('Verify addChild add tree to left if value is less that value of start tree', function () {
+    redBlackTree.addChild(0);
+    expect(redBlackTree.left.value).to.equal(0);
+    expect(redBlackTree.left.constructor).to.equal(RedBlackTree)
+  }); 
 
-  
+  it('Verify addChild add tree to right if value is greater that value of start tree', function () {
+    redBlackTree.addChild(10);
+    expect(redBlackTree.right.value).to.equal(10);
+    expect(redBlackTree.right.constructor).to.equal(RedBlackTree)
+  });   
+
 
 
   // Add more assertions here
